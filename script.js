@@ -102,12 +102,21 @@ listContainer.addEventListener("click", function(e)
 function saveData()
 {
     localStorage.setItem("data", listContainer.innerHTML);
+    localStorage.setItem("dataName", header.innerHTML);
 }
 
 // show data when browser is opened again
 function showTasks()
 {
     listContainer.innerHTML = localStorage.getItem("data");
+    if (savedHeader === null)
+    {
+        header.innerHTML = "Your To-Do List";
+    }
+    else
+    {
+        header.innerHTML = localStorage.getItem("dataName");
+    }
     CheckContainer();
 }
 showTasks();
