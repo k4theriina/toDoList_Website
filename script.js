@@ -58,8 +58,8 @@ function AddName()
         // Change the <h1> content based on the nameField input.
         header.textContent = `${nameBox.value}'s To-Do List`;
         nameBox.value = "";
+        saveData();
     }
-    saveData();
 }
 
 // Add a enter event listener to nameBox 
