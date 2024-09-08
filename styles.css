@@ -1,0 +1,219 @@
+h1{
+    font-family: Montserrat;
+    font-size: 48px;
+    color: #472d30;
+    text-align: center;
+    margin: 80px auto 0px auto;
+    font-weight: 550;
+}
+
+#nameField{
+    font-family: Montserrat;
+    font-size: 15px;
+    color: #472d30;
+    text-align: center;
+    margin: 50px auto 10px auto;
+    font-weight: 550;
+    user-select: none;
+    cursor: pointer;
+    background-color: #ebb9d5;
+    opacity: .5;
+    max-width: 10%;
+    max-height: 30px;
+    border-radius: 20px;
+    padding: 6px;
+    display: block;
+}
+
+#no-tasks-message {
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    color: #555;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20%;
+    opacity: .5;
+}
+
+
+#nameField:hover{
+    color: #a6a2a2;
+    text-decoration: underline;
+}
+
+body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to top, #90b270, #d3e089);
+    overflow-x: hidden;
+    max-width: 100%;
+}
+/* d3e089 F7DCB4*/
+
+.container{
+    position: relative;
+    box-sizing: border-box;
+    width: 40%;
+    background-color: #edeef0;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-left: 80px;
+    margin-right: 0;
+    padding: 0px 0px 20px 0px;
+    border-radius: 20px;
+    min-height: 63vh;
+    max-height: 63vh;
+    max-width: 42%;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+/* Custom scrollbar styles */
+.container::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+}
+
+.container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the scrollbar track */
+    border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: #A97D5D; /* Color of the scrollbar thumb */
+    border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar thumb on hover */
+}
+
+h2{
+    font-family: Montserrat;
+    font-size: 25px;
+    margin-top: 0px;
+    padding-top: 20px;
+    text-align: center;
+    color: #A97D5D;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-decoration: underline 1.5px;
+}
+
+/* .row{
+    position: relative;
+    top: -40px;
+    width: 40%;
+    max-height: ;
+    margin-top: 0px;
+    margin-left: 50%;
+    border: none;
+    border-radius: 50px;
+    background: #edeef0;
+    outline: none;
+    padding: 0px;
+    
+} */
+
+input{
+    outline: none;
+    background: transparent;
+    padding: 10px 30px;
+    max-height: 20px;
+    text-align: left;
+    position: relative;
+    top: -35px;
+    width: 40%;
+    margin-top: 0px;
+    margin-left: 50%;
+    border: none;
+    border-radius: 50px;
+    background: #edeef0;
+    outline: none;
+    
+}
+
+input::placeholder {
+    font-size: 16px;
+}
+
+button{
+    position: relative;
+    top: -72px;
+    border: none;
+    outline: none;
+    margin-left: 88.3%;
+    padding: 10px 30px;
+    background: #472d30;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+#catImg{
+    position: absolute;
+    width: 500px;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: 30px;
+    margin-left: 53%;
+    margin-right: 0;;
+}
+
+ul li{
+    font-family: Montserrat;
+    list-style: none;
+    font-size: 21px;
+    padding: 12px 50px 12px 10%;
+    padding-right: 13%;
+    margin-left: 0px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+  }
+
+  ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+  }
+ 
+  ul li.checked::before{
+    background-image: url(images/checked.png);
+  }
+
+li:hover{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li span{
+    position: absolute;
+    right: 40px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+  }
