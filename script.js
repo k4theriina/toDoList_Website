@@ -101,7 +101,7 @@ listContainer.addEventListener("click", function(e)
 // save data
 function saveData()
 {
-    localStorage.setitem("data", listContainer.innerHTML);
+    localStorage.setItem("data", listContainer.innerHTML);
 }
 
 // show data when browser is opened again
